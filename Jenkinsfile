@@ -39,8 +39,8 @@ pipeline {
             steps{
                	sh 'sudo docker image push swar2001/$JOB_NAME:v1.$BUILD_ID'
                 sh 'sudo docker image push swar2001/$JOB_NAME:latest'
-	        	sh 'sudo docker rmi swar2001/$JOB_NAME:v1.$BUILD_ID'
-	        	sh 'sudo docker rmi swar2001/$JOB_NAME:latest'	
+	        sh 'sudo docker rmi swar2001/$JOB_NAME:v1.$BUILD_ID'
+	        sh 'sudo docker rmi swar2001/$JOB_NAME:latest'	
             }
         }
 
